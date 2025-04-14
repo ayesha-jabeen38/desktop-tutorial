@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <meta charset="UTF-8">
+  <title> photographer portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+</head>
+<body>
+   <section id="homePage">
+    <div class="container">
+        <nav>
+            <div class="logo">
+                <i class="fas fa-camera"></i> Ayevo
+              </div>
+              
+            <div class="nav-links">
+              <a href="#homePage">Home</a>
+              <a href="#aboutSection">About</a>
+              <a href="#gallerySection">Gallery</a>
+              <a href="#testimonialSection">Testimonials</a>
+              <a href="#contactSection">Contact</a>
+            </div> 
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+                <button><i class="fas fa-search"></i></button>
+              </div>
+              <div class="menu-toggle" id="menu-toggle">
+                <i class="fas fa-bars"></i>
+              </div>
+              
+         </nav>
+         <section class="hero-section">
+          <div class="overlay-content">
+            <!-- Left Content -->
+            <div class="left-block">
+              <h2 class="heading" >Ayesha Noor</h2>
+              <p>Framing Beauty Through Every Click</p>
+              <p>I’m a passionate photographer at <strong>Ayevo</strong>, capturing love, light, and real emotions. 
+                <br>Weddings, portraits, and moments that matter — I love doing it all.</p>
+            
+              <h2>Book Your Session</h2>
+              <p><i class="fab fa-instagram"></i> @ayevo_photography</p>
+              <p><i class="fas fa-phone-alt"></i> +91 98765 43210 </p>
+              <p><i class="fas fa-envelope"></i> ayevo.photos@gmail.com</p>
+              <a href="#contact" class="book-btn">Let's Shoot</a>
+            </div>
+          </div>
+        </section>
+         <div id="buttonClick" class="row">
+          <div class="col-md-12 text-center" >
+            <a href="#gallerySection">
+              <button class="btn-advanced">View My Gallery</button>
+            </a>
+          </div>
+        </div>    
+    </div>  
+   </section>
+     <!-- about section -->
+     <div id="aboutSection">
+      <div class="intro">
+        <h1>WE CAPTURE THE MOMENTS</h1>
+        <p>
+          At Ayevo, we specialize in freezing those fleeting moments in time that hold immense significance for you.
+          With our passion for photography and keen eye for detail, we transform ordinary moments into extraordinary memories.
+        </p>
+        <p>
+          Whether it's a milestone event, a candid portrait, or the breathtaking beauty of nature, we strive to encapsulate
+          the essence of every moment, ensuring your cherished memories last a lifetime. Trust us to capture the magic of your
+          life’s journey, one frame at a time.
+        </p>
+        <img src="ayevo logo.png" alt="Ayevo Photography Logo" class="logo" />
+      </div>
+     </div>
+
+     <!--gallery section  -->
+   <div id="gallerySection">
+    <h3 class="gallery-name">*My Gallery*</h3>
+    <h3 class="portfolio-title">Capturing Timeless Moments with Style and Grace</h3>
+    <div class="mygallery">
+      <img src="image1 p.jpg" alt="image-1">
+      <img src="image2 p.jpg" alt="image-2">
+      <img src="image3 p.jpg" alt="image 3">
+      <img src="image4 p.jpg" alt="image 4">
+     
+      <!-- hiddenphotos -->
+       
+        <img class="hidden"  src="image1 p.jpg" alt="image-5">
+      <img class="hidden"  src="image2 p.jpg" alt="image-6">
+      <img class="hidden" src="image3 p.jpg" alt="image-7">
+      <img class="hidden" src="image4 p.jpg" alt="image-8">
+    </div>
+ 
+    <div class="gallery-btn">
+      <button class="btn-advanced" onclick="viewAll()">View all</button>
+    </div>
+          </div>
+        </div>
+        
+      </div>
+     </div>
+    <!-- testimonial section -->
+
+    <section class="testimonial-section" id="testimonialSection">
+      <div class="swiper testimonial-swiper">
+        <div class="swiper-wrapper">
+    
+          
+          <div class="swiper-slide testimonial-card">
+            <img src="testimonail 1.avif" alt="Client Photo">
+            <p>"Ayevo Photography truly captured the essence of our special day. The photos are stunning and full of emotion."</p>
+            <h4>- Sana R., Hyderabad</h4>
+          </div>
+    
+         
+          <div class="swiper-slide testimonial-card">
+            <img src="testimonial 2.avif" alt="Client Photo">
+            <p>“Ayevo captured every moment beautifully! The photos are full of emotion and elegance.
+              We couldn’t have asked for a better experience. Highly recommended!”</p>
+            <h4>- Rahul M., Secunderabad</h4>
+          </div>
+
+          <div class="swiper-slide testimonial-card">
+          <img src="testimonial 04.webp" alt="Client Photo">
+          <p>“Professional, friendly, and incredibly talented.
+              The results exceeded our expectations — each photo tells a story!”</p>
+          <h4>- monalisa.,Mumbai</h4>
+           </div>
+  
+        </div>
+    
+        <!-- Pagination Dots -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+    
+    <!-- footer section -->
+
+    <footer class="footer" id="contactSection">
+      <div class="footer-container">
+    
+        <!-- Contact Info -->
+        <div class="footer-contact">
+          <h3>Contact Ayevo</h3>
+          <p>Email: contact@ayevo.com</p>
+          <p>Phone: +91 98765 43210</p>
+          <p>Location: Hyderabad, India</p>
+        </div>
+    
+        <!-- Contact Form -->
+        <div class="footer-form">
+          <h3>Send Us a Message</h3>
+          <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+          </form>
+        </div>
+    
+        <!-- Social Media -->
+        <div class="footer-social">
+          <h3>Follow Us</h3>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+    
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Ayevo Photography. All rights reserved.</p>
+      </div>
+    </footer>
+    
+
+
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+  
+    menuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+
+    function viewAll() {
+    const hiddenImages = document.querySelectorAll('.mygallery .hidden');
+    hiddenImages.forEach(img => {
+      img.classList.remove('hidden');
+    });
+  }
+
+  </script>
+
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+  const swiper = new Swiper('.testimonial-swiper', {
+    loop: true,
+    autoplay: {
+      delay: 5000, // 5 seconds between slides
+      disableOnInteraction: false, // Keeps autoplay even when user interacts
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+  });
+</script>
+
+
+
+  </body>
+</html>
